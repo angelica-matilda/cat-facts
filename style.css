@@ -1,0 +1,146 @@
+:root {
+  --brown: #2E2515;
+  --brown2: #3B301B;
+  --pink: #ffbcd5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--pink);
+  font-family: 'Source Sans Pro', sans-serif;
+  color: var(--brown);
+}
+
+.page-wrapper {
+  height: 100vh;
+  margin-left: 2em;
+  margin-top: 0;
+  background-image: url(img/pawprints.png);
+  background-position: left;
+  background-repeat: repeat-y;
+}
+
+header {
+  margin-bottom: 4em;
+}
+
+h1 {
+  font-family: 'Pangolin', cursive;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--brown);
+  padding-top: 2em;
+}
+
+/* ---main/breed--- */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#wrapper {
+  width: 400px;
+  height: 250px;
+  display: none;
+  flex-direction: column;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 2px solid var(--brown);
+  border-radius: 18px;
+  justify-content: space-between;
+}
+
+article {
+  width: 360px;
+  margin: 0 auto;
+}
+
+article > h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+article > ul {
+  margin-left: 2em;
+}
+
+.funny-comment {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+#display-breed-details {
+  list-style-type: none;
+  padding: 0;
+}
+
+#btn-breed {
+  font-family: 'Pangolin', cursive;
+  font-size: 20px;
+  order: 1;
+  background-color: white;
+  width: 360px;
+  height: 35px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 10px auto;
+}
+
+.cat-property {
+  text-transform: capitalize;
+}
+
+/* ---aside/fact--- */
+
+aside {
+  width: 227px;
+  position: fixed;
+  bottom: 10px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bubble {
+  order: 1;
+  margin-top: 10px;
+}
+
+/* get a fact from the cat-button (invisible) */
+#btn-fact {
+  width: 250px;
+  border: none;
+  background-color: var(--pink);
+  order: 2;
+}
+
+#btn-fact > img {
+  width: 200px;
+}
+
+.display-fact {
+  background-color: #fff;
+  border: 2px solid var(--brown);
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.display-fact > button {
+  font-family: 'Pangolin', cursive;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: var(--pink);
+  padding: 3px 8px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 177px;
+}
